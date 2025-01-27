@@ -18,8 +18,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Hive Example',
       theme: ThemeData(
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.yellow))
+        ),
+        iconButtonTheme: IconButtonThemeData(style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.yellow))),
         appBarTheme: AppBarTheme(
           color: Colors.yellow,
         ),
